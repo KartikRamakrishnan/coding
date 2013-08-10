@@ -1,0 +1,22 @@
+using System.IO;
+using System;
+
+namespace StudEntry
+{
+    class student
+    {
+        string name = "Ajay";
+        int rno = 28;
+        int std = 10;
+        enum sec {A, B, C};
+        static void Main(string[] args)
+        {
+            student stud=new student();
+            int section=(int)sec.B;
+            Console.WriteLine("Student Info");
+            Console.WriteLine("Name:{0}", stud.name);
+            Console.WriteLine("Roll Number:{0}", stud.rno);
+            Console.WriteLine("Std:{0} Sec:{1}", stud.std, section);
+        }
+    }
+}
